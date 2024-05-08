@@ -1,0 +1,19 @@
+{
+    "name": "cypress",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "integrationtest": "cypress run --browser chrome --spec cypress/e2e/3-integration/*.js",
+        "acceptance": "cypress run --browser chrome --spec cypress/e2e/acceptance/*.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+        "@cypress/browserify-preprocessor": "latest",
+        "cypress": "^13.8.1",
+        "save-dev": "^0.0.1-security"
+    }
+}
